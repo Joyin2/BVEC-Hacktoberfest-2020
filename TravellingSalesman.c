@@ -1,7 +1,8 @@
 #include<stdio.h>
  
 int ary[10][10],completed[10],n,cost=0;
- 
+
+
 void takeInput()
 {
 	int i,j;
@@ -32,6 +33,7 @@ void takeInput()
 	}
 }
  
+
 void mincost(int city)
 {
 	int i,ncity;
@@ -52,7 +54,8 @@ void mincost(int city)
  
 	mincost(ncity);
 }
- 
+
+
 int least(int c)
 {
 	int i,nc=999;
@@ -74,7 +77,8 @@ int least(int c)
  
 	return nc;
 }
- 
+
+
 int main()
 {
 	takeInput();
